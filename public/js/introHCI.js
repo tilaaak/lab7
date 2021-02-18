@@ -3,6 +3,9 @@
 // Call this function when the page loads (the "ready" event)
 $(document).ready(function() {
 	initializePage();
+	$("#likeButt").click(function(e) {
+		ga("send", "event", "like", "click");
+	});
 });
 
 /*
